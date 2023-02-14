@@ -829,9 +829,12 @@ type TextDocumentClientCapabilities =
     SemanticTokens: SemanticTokensClientCapabilities option
 
     /// Capabilities specific to the `textDocument/inlayHint` request.
-    ///
     /// @since 3.17.0
-    InlayHint: InlayHintClientCapabilities option }
+    InlayHint: InlayHintClientCapabilities option 
+
+    /// Capabilities specific to the `textDocument/inlineValue` request.
+    /// @since 3.17.0
+    InlineValue: InlineValueClientCapabilities option }
 
 /// Client capabilities for the showDocument request.
 ///
